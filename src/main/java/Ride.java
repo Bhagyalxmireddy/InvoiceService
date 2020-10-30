@@ -1,8 +1,9 @@
 public class Ride {
-    public   int time;
+    public  final int time;
     public  double distance;
-
-    public Ride(double distance, int time) {
+    public final CabRide cabRide;
+    public Ride(CabRide ride,double distance, int time) {
+        this.cabRide = ride;
         this.distance = distance;
         this.time = time;
     }
