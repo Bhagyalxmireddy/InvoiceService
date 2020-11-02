@@ -14,7 +14,7 @@ public class InvoiceService {
     }
 
     public void addRides(String userId, Ride[] rides) {
-        rideRepository.addRide(userId,rides) ;
+        rideRepository.addRide(userId, rides) ;
     }
 
     public InvoiceSummary getInvoiceSummary(String userId) {
