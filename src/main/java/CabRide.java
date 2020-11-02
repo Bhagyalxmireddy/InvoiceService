@@ -13,7 +13,7 @@ public enum CabRide {
     }
 
     public double calCostOfCabRide(Ride ride) {
-        double rideCost = ride.distance + ride.time * costPerMin;
-        return Math.max(rideCost,minFarePerRide);
+        double rideCost = ride.distance * costPerKm + ride.time * costPerMin;
+        return Math.max(rideCost, minFarePerRide);
     }
 }

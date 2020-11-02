@@ -24,13 +24,13 @@ public class InvoiceServiceTest {
     @Test
     public void givenMultipleRides_ShouldReturnInvoiceSummary() {
         InvoiceSummary summary = invoiceService.calculateFare(rides);
-        Assert.assertEquals(expectedInvoiceSummary,summary);
+        Assert.assertEquals(expectedInvoiceSummary, summary);
     }
     @Test
     public void givenUserIdAndRides_ShouldReturnInvoicSummary(){
-      String userId = "a@b.com";
-        invoiceService.addRides(userId,rides);
+        String userId = "a@b.com";
+        invoiceService.addRides(userId, rides);
         InvoiceSummary summary = invoiceService.getInvoiceSummary(userId);
-        Assert.assertEquals(expectedInvoiceSummary,summary);
+        Assert.assertEquals(expectedInvoiceSummary, summary);
     }
 }
