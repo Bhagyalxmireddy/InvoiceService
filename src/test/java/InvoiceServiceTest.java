@@ -38,7 +38,7 @@ public class InvoiceServiceTest {
     public void givenUserIdAndRides_ShouldReturnInvoicSummary(){
       String userId = "a@b.com";
         Ride[] rides = { new Ride(2.0, 5),
-                new Ride(0.1, 1),
+                         new Ride(0.1, 1),
         };
         invoiceService.addRides(userId,rides);
         InvoiceSummary summary = invoiceService.getInvoiceSummary(userId);
